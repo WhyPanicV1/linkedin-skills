@@ -43,3 +43,14 @@ LinkedIn's ranker runs NLP on comments and rewards:
 - **Sub-thread sparks** — comments that generate replies from the author AND other commenters count as a strong signal
 
 **Before submitting, check:** does your comment add at least one noun/concept not already in the post? If no, rewrite.
+
+<!-- PT-PT-ADAPTATION -->
+## PT-PT override (highest priority)
+
+All output must be European Portuguese (PT-PT), never PT-BR. Read section 0 and
+section 3 of `references/voice-profile.md` (path relative to repo root) and apply
+its PT-PT checklist and Portuguese blacklist in addition to the English list
+above. When scrubbing or auditing a Portuguese text, flag PT-BR constructions
+(gerund "estou fazendo", "voce", "time", "celular", "usuario", "arquivo",
+"cadastro", "fato" for "facto") as errors to fix, and treat the Portuguese
+blacklist words as AI tells with the same weight as the English ones.

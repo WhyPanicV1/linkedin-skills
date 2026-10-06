@@ -552,3 +552,14 @@ Replace these patterns with the concrete moment that prompted the post:
 - "Honored to be mentioned" → what did you do to earn the mention?
 - "Delighted to be featured" → lead with the insight, not the feature
 - "Let me be honest" / "I'll be real" → delete the announcement; state the dated fact that follows it, flat
+
+<!-- PT-PT-ADAPTATION -->
+## PT-PT override (highest priority)
+
+All output must be European Portuguese (PT-PT), never PT-BR. Read section 0 and
+section 3 of `references/voice-profile.md` (path relative to repo root) and apply
+its PT-PT checklist and Portuguese blacklist in addition to the English list
+above. When scrubbing or auditing a Portuguese text, flag PT-BR constructions
+(gerund "estou fazendo", "voce", "time", "celular", "usuario", "arquivo",
+"cadastro", "fato" for "facto") as errors to fix, and treat the Portuguese
+blacklist words as AI tells with the same weight as the English ones.
